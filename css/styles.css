@@ -1,0 +1,248 @@
+/* Variables */
+:root {
+  --brand-color: #2196f3;
+  --bg-color-dark: #2f303a;
+  --bg-color-light: #f5f4fa;
+  --text-primary: #757575;
+  --text-secondary: #212121;
+  --accent-color: #ffffff;
+  --footer-contacts-color: rgba(255, 255, 255, 0.6);
+  --logo-header-color: #000000;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 0.03em;
+
+  background-color: var(--accent-color);
+  color: var(--text-primary);
+}
+
+/*Singletones and Patterns*/
+.nolist {
+  list-style: none;
+}
+.nodecor {
+  text-decoration: none;
+}
+
+/* .visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+} */
+
+/* Buttons */
+.button {
+  font-family: inherit;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  letter-spacing: inherit;
+}
+
+.button.active {
+  background-color: var(--brand-color);
+  color: var(--accent-color);
+}
+
+.button.idle {
+  background-color: var(--bg-color-light);
+  color: var(--text-secondary);
+}
+
+.button.hero {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  background-color: var(--brand-color);
+  color: var(--accent-color);
+}
+
+.button:hover,
+.button:focus,
+.button:active {
+  background-color: var(--brand-color);
+  color: var(--accent-color);
+}
+
+/* HEADER */
+.logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+
+  color: var(--brand-color);
+}
+.logo-header {
+  color: var(--logo-header-color);
+}
+
+.logo-footer {
+  color: var(--accent-color);
+}
+
+/* Site navigation */
+.site-nav {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.site-nav a:hover,
+.site-nav a:focus,
+.header-contacts:hover,
+.header-contacts:focus {
+  color: var(--brand-color);
+}
+
+.link {
+  color: var(--text-secondary);
+}
+.site-nav .link.current {
+  color: var(--brand-color);
+}
+
+/* Header Contacts */
+.header-contacts {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  color: inherit;
+}
+
+/* HEADER end */
+
+/* STUDIO PAGE MAIN */
+
+/* Hero section */
+.hero {
+  background-color: var(--bg-color-dark);
+}
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  color: var(--accent-color);
+}
+
+/* Advantages section */
+.advantages-features {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+
+  color: var(--text-secondary);
+}
+
+.advantages-text {
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+/* We do section */
+.wedo-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+
+  color: var(--text-secondary);
+}
+
+/* Team section */
+.team {
+  background-color: var(--bg-color-light);
+}
+.team-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+
+  color: var(--text-secondary);
+}
+
+.team-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+
+  color: var(--text-secondary);
+}
+
+.team-role {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.18;
+}
+
+/* STUDIO PAGE MAIN end*/
+
+/* PORTFOLIO PAGE */
+.items-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+
+  color: var(--text-secondary);
+}
+.items-filter {
+  font-size: 16px;
+  line-height: 1.9;
+
+  color: var(--text-primary);
+}
+/* PORTFOLIO PAGE end */
+
+/* Footer */
+
+.footer {
+  font-style: normal;
+
+  background-color: var(--bg-color-dark);
+}
+
+.footer-location {
+  font-size: 14px;
+  font-style: normal;
+  line-height: 1.7;
+
+  color: var(--accent-color);
+}
+.footer-contacts {
+  font-size: 14px;
+  font-style: normal;
+  line-height: 1.7;
+
+  color: var(--footer-contacts-color);
+}
+
+.footer-location:hover,
+.footer-location:focus,
+.footer-contacts:hover,
+.footer-contacts:focus {
+  color: var(--brand-color);
+}
