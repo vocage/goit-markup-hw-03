@@ -2,43 +2,54 @@
 <html lang="en">
   <head>
     <title>WebStudio Homepage</title>
-    <link rel="stylesheet" href="./css/styles.css" />
-    <!-- Do we need next two lines? -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
     <meta charset="utf-8" />
   </head>
 
   <body>
     <!-- Header Section -->
-    <header>
-      <nav>
-        <a href="./index.html" class="logo nodecor">Web<span class="logo-header">Studio</span></a>
-        <ul class="site-nav nolist">
-          <li><a class="link current nodecor" href="./index.html">Studio</a></li>
-          <li><a class="link nodecor" href="./portfolio.html">Portfolio</a></li>
-          <li><a class="link nodecor" href="">Contacts</a></li>
+
+    <!-- TODO:remove header class -->
+    <header class="page-header">
+      <div class="container">
+        <nav>
+          <a href="./index.html" class="logo nodecor">Web<span class="logo-header">Studio</span></a>
+          <ul class="site-nav nolist">
+            <li><a class="link current nodecor" href="./index.html">Studio</a></li>
+            <li><a class="link nodecor" href="./portfolio.html">Portfolio</a></li>
+            <li><a class="link nodecor" href="">Contacts</a></li>
+          </ul>
+        </nav>
+        <ul class="nolist">
+          <li>
+            <a class="header-contacts nodecor" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li><a class="header-contacts nodecor" href="tel:+380961111111">+380 961 11 11</a></li>
         </ul>
-      </nav>
-      <ul class="nolist">
-        <li>
-          <a class="header-contacts nodecor" href="mailto:info@devstudio.com">info@devstudio.com</a>
-        </li>
-        <li><a class="header-contacts nodecor" href="tel:+380961111111">+380 961 11 11</a></li>
-      </ul>
+      </div>
     </header>
 
     <!-- Main section -->
     <main>
       <!-- Hero section -->
-      <section class="hero">
-        <h1 class="hero-title">Effective solutions for your business</h1>
-        <button class="button hero" type="button">Request our service</button>
-      </section>
+      <div class="hero-container">
+        <section class="hero">
+          <h1 class="hero-title">Effective solutions for your business</h1>
+          <button class="button hero" type="button">Request our service</button>
+        </section>
+      </div>
 
       <!-- Advantages section -->
       <section>
@@ -180,3 +191,5 @@
     </footer>
   </body>
 </html>
+
+<!-- <div class="container"></div> -->
