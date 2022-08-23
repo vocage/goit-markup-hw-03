@@ -9,6 +9,7 @@
   --footer-contacts-color: rgba(255, 255, 255, 0.6);
   --logo-header-color: #000000;
   --border-bottom-color: #ececec;
+  --item-border-color: #eeeeee;
 }
 
 html {
@@ -40,7 +41,7 @@ body {
   margin-left: auto;
   margin-right: auto;
 
-  outline: 2px solid tomato;
+  /* outline: 2px solid tomato; */
 }
 
 .container.no-bottom {
@@ -122,7 +123,7 @@ img {
   color: var(--accent-color);
 }
 
-/* For first button that selects all items */
+/* For the first button that selects all items */
 .button.all {
   padding: 6px 25px;
   min-width: 73px;
@@ -198,6 +199,7 @@ img {
 
   color: var(--text-secondary);
 }
+
 .site-nav .link.current {
   color: var(--brand-color);
 }
@@ -239,28 +241,24 @@ img {
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
-  outline: 2px solid teal;
 }
 
-/* TODO:Not in use. Check if needed */
 .section.no-top-padding {
   padding-top: 0px;
-  /* padding-bottom: 0px; */
 }
 
 /* Hero section */
 
-/* TODO: merge .hero and /hero-container */
 .hero {
   background-color: var(--bg-color-dark);
   text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero-container {
-  /* width: 1600px; */
   margin-left: auto;
   margin-right: auto;
-  outline: 2px solid yellow;
 }
 
 .hero-title {
@@ -286,9 +284,6 @@ img {
 }
 
 .advantages-features {
-  /* margin-block-start: 0px; */
-  /* margin-bottom: 0; */
-
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -299,7 +294,6 @@ img {
 
 .advantages-text {
   margin-top: 10px;
-  /* margin-bottom: 0; */
 
   font-size: 14px;
   line-height: 1.7;
@@ -316,7 +310,6 @@ img {
 /* We do section */
 .wedo-title {
   margin-bottom: 50px;
-  /* margin-top: 0px; */
 
   font-weight: 700;
   font-size: 36px;
@@ -333,6 +326,7 @@ img {
 .wedo-list .item:not(:last-child) {
   margin-right: 30px;
 }
+
 /* Team section */
 .team {
   background-color: var(--bg-color-light);
@@ -347,10 +341,19 @@ img {
   margin-right: 30px;
 }
 
-.team-title {
-  /* margin-top: 0; */
-  margin-bottom: 50px;
+.team-list .item {
+  background-color: var(--accent-color);
+  /* border: 1px solid var(--item-border-color); */
+}
 
+.team-description {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+.team-title {
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -360,9 +363,6 @@ img {
 }
 
 .team-name {
-  margin-top: 30px;
-  /* margin-bottom: 0; */
-
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
@@ -383,6 +383,7 @@ img {
 /* PORTFOLIO PAGE */
 .radio {
   display: flex;
+  justify-content: center;
 }
 
 .radio .item:not(:last-child) {
@@ -392,15 +393,31 @@ img {
 .portfolio {
   display: flex;
   flex-wrap: wrap;
+
+  padding-top: 50px;
 }
 
 .portfolio .item {
-  width: 370px;
+  width: calc((100% - 60px) / 3);
   margin-right: 30px;
+  margin-bottom: 30px;
+  border: 1px solid var(--item-border-color);
 }
 
-.portfolio .item:nth-last-child(3n) {
+.portfolio .item:nth-child(3n) {
   margin-right: 0px;
+}
+
+.portfolio .item:nth-last-child(-n + 3) {
+  margin-bottom: 0;
+}
+
+.item-description {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
+  text-align: left;
 }
 
 .items-title {
@@ -412,6 +429,7 @@ img {
   color: var(--text-secondary);
 }
 .items-filter {
+  margin-top: 4px;
   font-size: 16px;
   line-height: 1.9;
 
@@ -434,13 +452,11 @@ img {
   background-color: var(--bg-color-dark);
 }
 
-/*   padding-top: 60px;
-  padding-bottom: 60px; */
-
 .footer-location {
   display: inline-block;
   margin-top: 10px;
   margin-bottom: 9px;
+  width: 233px;
 
   font-size: 14px;
   font-style: normal;
@@ -457,6 +473,10 @@ img {
   line-height: 1.7;
 
   color: var(--footer-contacts-color);
+}
+
+.footer-contacts.no-bottom {
+  margin-bottom: 0;
 }
 
 /* remove margin bottom for tel */
