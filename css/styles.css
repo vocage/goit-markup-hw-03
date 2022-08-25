@@ -44,10 +44,6 @@ body {
   /* outline: 2px solid tomato; */
 }
 
-.container.no-bottom {
-  margin-bottom: 0px;
-}
-
 h1,
 h2,
 h3,
@@ -58,6 +54,7 @@ p,
 ul {
   margin-top: 0;
   margin-bottom: 0;
+  padding: 0;
 }
 
 img {
@@ -73,6 +70,19 @@ img {
   padding: 0;
   margin: 0;
 }
+
+.nolist li {
+  margin-bottom: 9px;
+}
+
+.nolist li:last-child {
+  margin-bottom: 0px;
+}
+
+.nolist a {
+  margin: 0;
+}
+
 .nodecor {
   text-decoration: none;
 }
@@ -231,6 +241,9 @@ img {
 
 .container.header {
   margin-bottom: 0px;
+}
+
+.page-header {
   border-bottom: 1px solid var(--border-bottom-color);
 }
 
@@ -284,6 +297,8 @@ img {
 }
 
 .advantages-features {
+  margin-bottom: 10px;
+
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -293,8 +308,6 @@ img {
 }
 
 .advantages-text {
-  margin-top: 10px;
-
   font-size: 14px;
   line-height: 1.7;
 }
@@ -343,6 +356,7 @@ img {
 
 .team-list .item {
   background-color: var(--accent-color);
+  border-radius: 0 0 4px 4px;
   /* border: 1px solid var(--item-border-color); */
 }
 
@@ -363,6 +377,8 @@ img {
 }
 
 .team-name {
+  margin-bottom: 10px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
@@ -371,7 +387,7 @@ img {
 }
 
 .team-role {
-  margin-top: 10px;
+  /* margin-top: 10px; */
 
   font-weight: 400;
   font-size: 16px;
@@ -384,6 +400,8 @@ img {
 .radio {
   display: flex;
   justify-content: center;
+
+  margin-bottom: 50px;
 }
 
 .radio .item:not(:last-child) {
@@ -393,8 +411,6 @@ img {
 .portfolio {
   display: flex;
   flex-wrap: wrap;
-
-  padding-top: 50px;
 }
 
 .portfolio .item {
@@ -419,9 +435,12 @@ img {
   text-align: left;
 
   border: 1px solid var(--item-border-color);
+  border-top-width: 0px;
 }
 
 .items-title {
+  margin-bottom: 4px;
+
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -430,7 +449,6 @@ img {
   color: var(--text-secondary);
 }
 .items-filter {
-  margin-top: 4px;
   font-size: 16px;
   line-height: 1.9;
 
@@ -441,7 +459,11 @@ img {
 /* Footer */
 
 .logo-footer {
+  margin-bottom: 20px;
+}
+.logo-spn {
   color: var(--accent-color);
+  /* margin-bottom: 20px; */
 }
 
 .footer {
@@ -474,10 +496,6 @@ img {
   line-height: 1.7;
 
   color: var(--footer-contacts-color);
-}
-
-.footer-contacts.no-bottom {
-  margin-bottom: 0;
 }
 
 .footer-location:hover,
